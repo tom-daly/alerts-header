@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+    <ClientSideComponentInstance
+        Title="AlertsHeader"
+        Location="ClientSideExtension.ApplicationCustomizer"
+        ComponentId="4d54f7c9-2e53-41af-8f9e-7141eadced4b"
+        Properties="{}">
+    </ClientSideComponentInstance>
+</Elements>

@@ -1,0 +1,18 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/spfx-build/config.2.0.schema.json",
+  "version": "2.0",
+  "bundles": {
+    "alerts-header-application-customizer": {
+      "components": [
+        {
+          "entrypoint": "./lib/extensions/alertsHeader/AlertsHeaderApplicationCustomizer.js",
+          "manifest": "./src/extensions/alertsHeader/AlertsHeaderApplicationCustomizer.manifest.json"
+        }
+      ]
+    }
+  },
+  "externals": {},
+  "localizedResources": {
+    "AlertsHeaderApplicationCustomizerStrings": "lib/extensions/alertsHeader/loc/{locale}.js"
+  }
+}

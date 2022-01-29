@@ -1,0 +1,156 @@
+@import "~office-ui-fabric-react/dist/sass/References.scss";
+$breakpoint-tablet: 991px;
+
+.alertItem {
+  font-size: 1.5rem;
+
+  .actionable{
+    background: #fedb00;
+    color: #323130;
+    .alertIcon {
+      color: #323130;
+    }
+    .alertClose {
+      i {
+        color: #323130 !important;
+      }
+    }
+    .alertLink{
+      a {
+        color: #323130;
+      }
+    }
+  }
+  .info {
+    background: #214f91;
+    color: #ffffff;
+    .alertIcon {
+      color: #ffffff;
+    }
+    .alertClose {
+      i {
+        color: white !important;
+      }
+    }
+  }
+
+  .warning {
+    background: #c8192e;
+    color: #fff;
+    .alertIcon {
+      color: #fedb09;
+    }
+    .alertClose {
+      i {
+        color: white !important;
+      }
+    }
+  }
+
+  .stack {
+    overflow: "hidden";
+    width: 100%;
+  }
+
+  .stackMessage {
+    padding: 0 10px;
+    flex-grow: 1;
+  }
+
+  .stackLink {
+    padding: 0;
+    flex-grow: 0;
+    overflow: visible;
+    display: inline-block;
+    align-self: flex-start;
+  }
+
+  .stackIcon {
+    min-width: 35px;
+    align-self: flex-start;
+    flex-grow: 0;
+  }
+
+  .alertIcon {
+    font-size: 1.5rem;
+    padding: 0px 5px;
+    position: relative;
+  }
+
+  .alertDescription {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    line-height: 18px;
+    letter-spacing: -0.04px;
+    padding: 0px;
+  }
+
+  .alertDescriptionExp {
+    height: auto;
+    line-height: 18px;
+    letter-spacing: -0.04px;
+  }
+
+  .alertLink {
+    padding: 6px 10px;
+    text-align: right;
+    white-space: nowrap;
+    display: inline-block;
+    a {
+      color: #fff;
+      font-weight: bold;
+      font-size: 14px;
+      letter-spacing: -0.04px;
+    }
+  }
+
+  .alertClose {
+    padding: 0;
+    > button:hover {
+      background-color: transparent;
+    }
+  }
+
+  .container {
+    padding: 10px 40px 10px 45px;
+  }
+
+  @media only screen and (max-width: $ms-screen-max-sm) {
+    // Styles for small screens
+    .hideInMobile {
+      display: none;
+    }
+    .alertLink {
+      display: inline-block;
+      width: 100%;
+      margin-top: .75rem;
+    }
+  }
+
+  @media only screen and (min-width: $ms-screen-min-md) {
+    // Style for bigger screens
+    .hideInDesktop {
+      display: none;
+    }
+  }
+}
+
+@media (max-width: $breakpoint-tablet) {
+  .alertItem {
+    .container {
+      padding: 10px 15px;
+    }
+  }
+}
+
+
+@media only screen and (max-width: $ms-screen-max-sm) {
+  .alertItem {
+   .alertLink {
+     text-align: left;
+     padding: 20px 0;
+   }
+  }
+}
+

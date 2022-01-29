@@ -1,0 +1,38 @@
+{
+    "$schema": "https://developer.microsoft.com/json-schemas/spfx-build/package-solution.schema.json",
+    "solution": {
+        "name": "alerts-header-client-side-solution",
+        "id": "2a487cbd-1d6a-4e0c-95be-9af8639b4d61",
+        "version": "1.0.0.16",
+        "includeClientSideAssets": true,
+        "isDomainIsolated": false,
+        "developer": {
+            "name": "",
+            "websiteUrl": "",
+            "privacyUrl": "",
+            "termsOfUseUrl": "",
+            "mpnId": ""
+        },
+        "features": [
+            {
+                "title": "Application Extension - Deployment of custom action.",
+                "description": "Deploys a custom action with ClientSideComponentId association",
+                "id": "d4d7ee33-4aab-49ff-9759-927ec405fc33",
+                "version": "1.0.0.0",
+                "assets": {
+                    "elementManifests": [
+                        "elements.xml",
+                        "ClientSideInstance.xml",
+                        "listElements.xml"
+                    ],
+                    "elementFiles": [
+                        "listSchema_Alerts.xml"
+                    ]
+                }
+            }
+        ]
+    },
+    "paths": {
+        "zippedPackage": "solution/alerts-header.sppkg"
+    }
+}
