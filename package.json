@@ -30,17 +30,18 @@
     "react-fontawesome": "^1.7.1"
   },
   "devDependencies": {
-    "@microsoft/rush-stack-compiler-3.3": "0.3.5",
+    "@microsoft/rush-stack-compiler-3.9": "^0.4.47",
     "@microsoft/sp-build-web": "1.13.1",
     "@microsoft/sp-module-interfaces": "1.13.1",
     "@microsoft/sp-tslint-rules": "1.13.1",
-    "@microsoft/sp-webpart-workbench": "1.12.1",
     "@types/chai": "3.4.34",
     "@types/es6-promise": "0.0.33",
     "@types/mocha": "2.2.38",
+    "@types/react": "17.0.39",
     "@types/webpack-env": "1.13.1",
     "ajv": "~5.2.2",
-    "gulp": "~3.9.1",
-    "webpack": "^5.67.0"
+    "gulp": "4.0.2",
+    "typescript": "^4.5.5",
+    "webpack": "4.46.0"
   }
 }

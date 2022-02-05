@@ -14,7 +14,6 @@ export interface IAlertItem {
   description: string;
   type: string;
   link: IAlertLink;
-  iconOverride: string;
 }
 
 export interface IAlertLink {

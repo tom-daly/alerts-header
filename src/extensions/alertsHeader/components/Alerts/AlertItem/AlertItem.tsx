@@ -5,17 +5,11 @@ import {
   faInfoCircle,
   faBullhorn,
 } from "@fortawesome/free-solid-svg-icons";
-import {
-  solid,
-  regular,
-  brands,
-} from "@fortawesome/fontawesome-svg-core/import.macro";
 import { AlertType, IAlertItem } from "../index";
 import { IStackItemStyles, IconButton, Stack } from "office-ui-fabric-react";
 import { Icon } from "office-ui-fabric-react/lib/Icon";
 import { css } from "@uifabric/utilities/lib/css";
 import styles from "./AlertItem.module.scss";
-const camelCase = require("camelcase");
 
 export interface IAlertItemState {
   hidden: boolean;
@@ -51,23 +45,18 @@ export class AlertItem extends React.Component<
     let alertType: string;
     var iconName: any;
 
-    if (this.props.item.iconOverride.length > 0) {
+    if (this.props.item.type == AlertType.Actionable) {
       alertType = styles.actionable;
-      iconName = this.props.item.iconOverride;
+      iconName = faBullhorn;
+    } else if (this.props.item.type == AlertType.Warning) {
+      alertType = styles.warning;
+      iconName = faExclamationTriangle;
     } else {
-      if (this.props.item.type == AlertType.Actionable) {
-        alertType = styles.actionable;
-        iconName = faBullhorn;
-      } else if (this.props.item.type == AlertType.Warning) {
-        alertType = styles.warning;
-        iconName = faExclamationTriangle;
-      } else {
-        alertType = styles.info;
-        iconName = faInfoCircle;
-      }
+      alertType = styles.info;
+      iconName = faInfoCircle;
     }
 
-    var el = !this.state.hidden ? (
+    let el = !this.state.hidden ? (
       <div className={styles.alertItem} ref={(node) => (this._nodeRef = node)}>
         <div className={css(styles.container, alertType)}>
           <Stack horizontal className={styles.stack}>
