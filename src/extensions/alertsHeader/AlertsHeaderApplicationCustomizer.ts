@@ -52,6 +52,22 @@ export default class AlertsHeaderApplicationCustomizer extends BaseApplicationCu
   }
 
   private _renderControls = (delay: number) => {
+
+    // This code below would display the alerts in the Top Placeholder zone
+    // this is the supported place to display the application customizers
+
+    // if (this.topPlaceholder.domElement) {
+    //   const alertElement: React.ReactElement<any> = React.createElement(
+    //     Alerts,
+    //     { siteId: this.context.pageContext.web.id.toString() }
+    //   );
+    //   ReactDOM.render(alertElement, this.topPlaceholder.domElement);
+    // }
+
+
+    // This code below will display the alerts under the header
+    // this is the unsupported place to display the applcation customizer
+
     try {
       // The event is getting called before the page navigation happens
       // Due to this, the onScroll event that we are adding (for BackToTop)

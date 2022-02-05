@@ -16,8 +16,8 @@ export class Alerts extends React.Component<IAlertProps, IAlertState> {
   public constructor(props: IAlertProps) {
     super(props);
     if (this.props.showRemoteAlerts) {
-      this._storageKey = "DEClosedAlerts";
-      this.cache_key = "DEBUGlobalAlerts";
+      this._storageKey = "SPFXClosedAlerts";
+      this.cache_key = "SPFXlobalAlerts";
     } else {
       this._storageKey = `${this.props.siteId}ClosedAlerts`;
       this.cache_key = `${this.props.siteId}AllAlerts`;

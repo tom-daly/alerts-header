@@ -14,7 +14,7 @@
     "scriptResources": {
       "alerts-header-application-customizer": {
         "type": "path",
-        "path": "alerts-header-application-customizer_71f8c2c845abbef8fa95.js"
+        "path": "alerts-header-application-customizer_1c8b4a4cad1bdd2682ac.js"
       },
       "@microsoft/sp-application-base": {
         "type": "component",
