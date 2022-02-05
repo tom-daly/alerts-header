@@ -67,7 +67,7 @@ export class AlertItem extends React.Component<
               className={styles.stackIcon}
             >
               <span className={styles.alertIcon}>
-                {/* <FontAwesomeIcon icon={solid("user-secret")} /> */}
+                <FontAwesomeIcon icon={iconName} />
               </span>
             </Stack.Item>
             <Stack.Item

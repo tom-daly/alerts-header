@@ -27,7 +27,7 @@ export class AlertsService {
       {
         return sp.web.lists
         .getByTitle("Alerts")
-        .items.select("ID", "Title", "AlertType", "IconOverride", "Description", "Link", "EndDateTime")
+        .items.select("ID", "Title", "AlertType", "Description", "Link", "EndDateTime")
         .filter(
           `StartDateTime le datetime'${dateTimeNow.toISOString()}' and EndDateTime ge datetime'${dateTimeNow.toISOString()}'`
         )

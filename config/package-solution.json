@@ -3,7 +3,7 @@
     "solution": {
         "name": "alerts-header-client-side-solution",
         "id": "2a487cbd-1d6a-4e0c-95be-9af8639b4d61",
-        "version": "1.0.0.71",
+        "version": "1.0.1.0",
         "includeClientSideAssets": true,
         "isDomainIsolated": false,
         "developer": {

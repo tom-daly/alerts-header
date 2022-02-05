@@ -19,7 +19,6 @@
           <!-- Custom Field refs -->
           <FieldRef ID="{a0f13f11-da45-4ad2-a62d-24d0ba05c88f}" Name="Description" />
           <FieldRef ID="{ef3702e0-1f86-43df-84bd-b60465b71214}" Name="AlertType" />
-          <!--<FieldRef ID="{0845342b-ab9f-4c35-81da-9f1622b372a7}" Name="IconOverride" />-->
           <FieldRef ID="{fc28694b-a92b-422d-96e9-63fb2d4a8617}" Name="Link" />
           <FieldRef ID="{70dc2ff6-28ba-452e-84a5-ccbbd2e855cb}" Name="StartDateTime" />
           <FieldRef ID="{7f50a89a-5101-40b5-b978-c70124358c1a}" Name="EndDateTime" />
