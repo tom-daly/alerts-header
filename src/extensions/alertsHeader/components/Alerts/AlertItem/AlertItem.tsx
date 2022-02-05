@@ -1,17 +1,21 @@
 import * as React from "react";
-
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faExclamationTriangle,
   faInfoCircle,
-  faBullhorn
+  faBullhorn,
 } from "@fortawesome/free-solid-svg-icons";
+import {
+  solid,
+  regular,
+  brands,
+} from "@fortawesome/fontawesome-svg-core/import.macro";
 import { AlertType, IAlertItem } from "../index";
 import { IStackItemStyles, IconButton, Stack } from "office-ui-fabric-react";
-
 import { Icon } from "office-ui-fabric-react/lib/Icon";
 import { css } from "@uifabric/utilities/lib/css";
 import styles from "./AlertItem.module.scss";
+const camelCase = require("camelcase");
 
 export interface IAlertItemState {
   hidden: boolean;
@@ -44,17 +48,23 @@ export class AlertItem extends React.Component<
     };
   }
   public render(): React.ReactElement<IAlertItem> {
-    var alertType: string;
+    let alertType: string;
     var iconName: any;
-    if (this.props.item.type == AlertType.Actionable) {
+
+    if (this.props.item.iconOverride.length > 0) {
       alertType = styles.actionable;
-      iconName = faBullhorn;
-    } else if (this.props.item.type == AlertType.Warning) {
-      alertType = styles.warning;
-      iconName = faExclamationTriangle;
+      iconName = this.props.item.iconOverride;
     } else {
-      alertType = styles.info;
-      iconName = faInfoCircle;
+      if (this.props.item.type == AlertType.Actionable) {
+        alertType = styles.actionable;
+        iconName = faBullhorn;
+      } else if (this.props.item.type == AlertType.Warning) {
+        alertType = styles.warning;
+        iconName = faExclamationTriangle;
+      } else {
+        alertType = styles.info;
+        iconName = faInfoCircle;
+      }
     }
 
     var el = !this.state.hidden ? (
@@ -68,7 +78,7 @@ export class AlertItem extends React.Component<
               className={styles.stackIcon}
             >
               <span className={styles.alertIcon}>
-                <FontAwesomeIcon icon={iconName}></FontAwesomeIcon>
+                {/* <FontAwesomeIcon icon={solid("user-secret")} /> */}
               </span>
             </Stack.Item>
             <Stack.Item

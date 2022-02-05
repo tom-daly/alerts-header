@@ -63,11 +63,11 @@ export default class AlertsHeaderApplicationCustomizer extends BaseApplicationCu
         if (this.topPlaceholder) {
 
             // Render the local alerts below default header
-          let alertsContainer = document.getElementById("dom-alerts-container");
+          let alertsContainer = document.getElementById("spfx-alerts-container");
           if (!alertsContainer) {
             const headerDiv = document.getElementById("spSiteHeader");
             alertsContainer = document.createElement("div");
-            alertsContainer.id = "dom-alerts-container";
+            alertsContainer.id = "spfx-alerts-container";
             headerDiv.appendChild(alertsContainer);
           }
           const alertElement: React.ReactElement<any> = React.createElement(

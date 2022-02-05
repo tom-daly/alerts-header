@@ -77,6 +77,7 @@ export class Alerts extends React.Component<IAlertProps, IAlertState> {
           Id: val["Id"],
           title: val["Title"],
           description: val["Description"],
+          iconOverride: val["IconOverride"],
           type: val["AlertType"],
           link: val["Link"],
         });
