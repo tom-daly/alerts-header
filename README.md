@@ -1,5 +1,5 @@
 # Introduction
-This project is an SPFx application customizer built for Modern SharePoint sites / pages. It will place itself in the header placeholder of your site and show alerts from a list within your site. Check out the [blog](https://thomasdaly.net/2021/10/10/alerts-header-spfx-project/)
+This project is an SPFx application customizer built for Modern SharePoint sites / pages. It will place itself in the header placeholder of your site and show alerts from a list within your site. Check out the [blog](https://thomasdaly.net/2021/10/10/alerts-header-spfx-project/).
 
 Rebuilt fresh on SPFx v1.13.1 so that it will support:
 
@@ -61,12 +61,12 @@ Activation on a Modern site deployment is straightforward. [For more information
 
 ***In a minute or two it will be activated on that modern site***
 
-![update colors](https://github.com/tom-daly/spfx-side-navigation/blob/master/images/add_app.gif)
+![adding to site](https://github.com/tom-daly/spfx-side-navigation/blob/master/images/add_app.gif)
 
 # Modifications
 
 ## Updating the Styles + Changing Colors, Adding Alert Types and Icons
-This project was setup with three different styles: Alert, Actionable and Information. More types can be added with your own custom styles. Font Awesome is used for the fonts which provides plenty of free icons. Please read the blog post for more information [blog](https://thomasdaly.net/2021/10/10/alerts-header-spfx-project/) 
+This project was setup with three different styles: Alert, Actionable and Information. More types can be added with your own custom styles. Font Awesome is used for the fonts which provides plenty of free icons. Please read the blog post for more information [blog](https://thomasdaly.net/2021/10/10/alerts-header-spfx-project/).
 
 
 # How To Use
