@@ -1,5 +1,5 @@
 # Introduction
-This project is an SPFx application customizer built for Modern SharePoint sites / pages. It will place itself in the header placeholder of your site and show alerts from a list within your site. Check out the [blog]([https://thomasdaly.net/2021/10/10/alerts-header-spfx-project/)
+This project is an SPFx application customizer built for Modern SharePoint sites / pages. It will place itself in the header placeholder of your site and show alerts from a list within your site. Check out the [blog](https://thomasdaly.net/2021/10/10/alerts-header-spfx-project/)
 
 Rebuilt fresh on SPFx v1.13.1 so that it will support:
 
