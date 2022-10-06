@@ -47,7 +47,7 @@ export default class AlertsHeaderApplicationCustomizer extends BaseApplicationCu
       this.topPlaceholder = this.context.placeholderProvider.tryCreateContent(
         PlaceholderName.Top
       );
-      this._renderControls(100);
+      this._renderControls(3000);
     }
   }
 
